@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+   background-color: #ffff;
+   margin:0;
+   min-width: 375px;
+   max-width: 1920;
+   margin: auto;   
+}  
+
+h1{
+    margin-right: 41.5%;
+    font-family: roboto;
+    color: #DC241F;
+}
+
+p{
+    font-family: roboto;
+    color: black;
+    font-size: 14px;
+}
+
+header {
+    background: linear-gradient(transparent);
+    color: white;
+    margin-left: 22%;
+    padding: 30px 20px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+}
+
+
+
+a{
+    text-decoration: none;
+    font-family: roboto;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #4165CA;
+    margin-top: -1%;
+        
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+
+
+section {    
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 2%;
+    margin-left:26%;
+    font-family: roboto;
+    color: #203264;            
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content p {
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #4e7af5;
+    height: 20px;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin-top: 10%;
+}
+
+@media(max-width: 768px){
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+h3{
+    font-family: roboto;
+    color: #203264;
+}
+
+#sobre{
+    margin-left: 22.5%;
+}
+
+
+
+#sobre > p{
+    background-image: linear-gradient(to left,#4E7BF5,#3654A8, #2B4386);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 50px 40px 40px 40px;
+    height: 300px;
+    width:1200px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.425);
+
+}
+
+#sobre > p {
+    font-family: roboto;
+    
+}
+
+.btn-orcamento{
+    font-family: roboto, bold;
+    
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    color: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: red;
+    transition: 1s;
+}
+
+.btn-orcamento:hover{
+    transform: scale(1.2);
+
+}
+
+.slide-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    z-index: 10;
+
+}
+
+h4{
+    font-family: roboto;
+    font-size: 2em;
+}
+
+.slide{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    transition: 2s;
+    margin-block-start:auto ;
+}
+
+.slider{
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex; 
+}
+
+.slides input{
+    display: none;
+    width: 100vw;
+}
+
+.slide{    
+    position: relative;
+    transition: 2s;
+    margin-block-start: auto;
+}
+
+.slide img{    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide::before{
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 5; 
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 1920px;
+    margin-top:-50px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #ffffff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navigation_auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+ .navigation_auto{
+    position: absolute;
+    width: 1920px;
+    margin-top: 550px;
+    display: flex;
+    justify-content: center;
+ }
+
+.navigation_auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation_auto .auto-btn1{
+    background-color: #ffffff;
+}
+#radio2:checked ~ .navigation_auto .auto-btn2{
+    background-color: #ffffff;
+}
+#radio3:checked ~ .navigation_auto .auto-btn3{
+    background-color: #ffffff;
+}
+
+#contato{
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.37);
+    height: 300px;
+    width: 600px;
+    position: absolute;  
+}
+
+#contato h2{
+    text-align: start;
+    margin: 0;
+    padding: 10px;
+}
+
+#contato p{
+    
+}
+
+
+#contato >  img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 50%;    
+}
+
+#contato img{
+    position: relative;
+    top: 7%;
+}
+
+
+
+#fones{
+    position: relative;
+    bottom: 25%;
+    left: 5%;
+    
+}
+
+#fones > p{
+    padding: 5px;
+}
+
+#fones > p{    
+    font-size: 18px;
+}
+
+
+li{
+    margin: 9px;
+    font-weight: bold;
+}
+
+li > img{
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+}
+
+.atuacao{
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.349);
+    height: 300px;
+    width: 600px;
+    position: relative;
+    left: 65%;
+    top: 50%;
+    
+    
+}
+
+#instagram{  
+    border-radius: 14px;
+    display: block;
+    position: absolute;
+    top: 80%;
+    right: 4%;
+    width: 550px;    
+}
+
+.logo-instagram > img{
+    
+    height: 30px;
+    width: 30px;
+    border-radius: 50%; 
+    
+    
+    
+    
+    
+}
+
+.logo-instagram{
+    margin-top: 4px;   
+}
+
+#servicos > h2{
+    margin-top: -10%;
+}
+
+#orcamento{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-bottom: -5%;
+}
+
+
+    
+    
