@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -73,7 +72,7 @@ section {
 
 h2 {
     margin-top: 2%;
-    margin-left:26%;
+    margin-left:24%;
     font-family: roboto;
     color: #203264;            
     margin-bottom: 30px;
@@ -138,27 +137,40 @@ h3{
 }
 
 #sobre{
-    margin-left: 22.5%;
+    margin: auto;
+    min-width: 360px;
+    max-width: 1000px;
+    transition: 0.5s;
 }
 
 
 
-#sobre > p{
-    background-image: linear-gradient(to left,#4E7BF5,#3654A8, #2B4386);
+
+#sobre > p{   
     text-align: center;
-    color: white;
+    color:black;
     font-size: 20px;
     padding: 50px 40px 40px 40px;
-    height: 300px;
+    height: 170px;
     width:1200px;
     border-radius: 12px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.425);
+    margin: auto;
+    min-width: 360px;
+    max-width: 1000px;
+    line-height: 40px;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.062);
+    
 
 }
 
 #sobre > p {
-    font-family: roboto;
-    
+    font-family: roboto;    
+}
+
+#sobre:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .btn-orcamento{
@@ -189,7 +201,6 @@ h3{
     width: 80%;
     max-width: 800px;
     z-index: 10;
-
 }
 
 h4{
@@ -212,6 +223,7 @@ h4{
 }
 
 .slides{
+    display: block;
     width: 400%;
     height: 100%;
     display: flex; 
@@ -290,7 +302,7 @@ h4{
 }
  .navigation_auto{
     position: absolute;
-    width: 1920px;
+    width: 100%;
     margin-top: 550px;
     display: flex;
     justify-content: center;
@@ -310,55 +322,6 @@ h4{
     background-color: #ffffff;
 }
 
-#contato{
-    border-radius: 15px;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.37);
-    height: 300px;
-    width: 600px;
-    position: absolute;  
-}
-
-#contato h2{
-    text-align: start;
-    margin: 0;
-    padding: 10px;
-}
-
-#contato p{
-    
-}
-
-
-#contato >  img {
-    height: 30px;
-    width: 30px;
-    margin: 5px;
-    border-radius: 50%;    
-}
-
-#contato img{
-    position: relative;
-    top: 7%;
-}
-
-
-
-#fones{
-    position: relative;
-    bottom: 25%;
-    left: 5%;
-    
-}
-
-#fones > p{
-    padding: 5px;
-}
-
-#fones > p{    
-    font-size: 18px;
-}
-
-
 li{
     margin: 9px;
     font-weight: bold;
@@ -370,47 +333,6 @@ li > img{
     margin: 3px;
 }
 
-.atuacao{
-    margin: 0;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.349);
-    height: 300px;
-    width: 600px;
-    position: relative;
-    left: 65%;
-    top: 50%;
-    
-    
-}
-
-#instagram{  
-    border-radius: 14px;
-    display: block;
-    position: absolute;
-    top: 80%;
-    right: 4%;
-    width: 550px;    
-}
-
-.logo-instagram > img{
-    
-    height: 30px;
-    width: 30px;
-    border-radius: 50%; 
-    
-    
-    
-    
-    
-}
-
-.logo-instagram{
-    margin-top: 4px;   
-}
-
-#servicos > h2{
-    margin-top: -10%;
-}
 
 #orcamento{
     font-size: 13px;
@@ -419,6 +341,62 @@ li > img{
     margin-bottom: -5%;
 }
 
+#contato{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
 
+#contato{
+    font-size: 4em;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 14px;
+    background-image: linear-gradient(to bottom,#4C76EC,#2B4386);
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.336);
+}
+
+#contato p{
+    position: relative;
+    color: white;
+    top: 5%;
+    left: 15%;
+    width: 400px;
+}
+
+#contato img{
+    width: 20px;
+    position: relative;
+    top: 20%;
+    left: 9%;
+}
+
+#contato a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+#contato a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#telefone{
+    color: #2B4386;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    padding: 0;
+    font-family: roboto;
+
+}
     
     
