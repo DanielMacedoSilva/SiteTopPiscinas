@@ -9,33 +9,11 @@
 body {
    background-color: #ffff;
    margin:0;
-   min-width: 375px;
-   max-width: 1920;
-   margin: auto;   
+   
+   
 }  
 
-h1{
-    margin-right: 41.5%;
-    font-family: roboto;
-    color: #DC241F;
-}
 
-p{
-    font-family: roboto;
-    color: black;
-    font-size: 14px;
-}
-
-header {
-    background: linear-gradient(transparent);
-    color: white;
-    margin-left: 22%;
-    padding: 30px 20px;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto;
-}
 
 
 
@@ -115,14 +93,7 @@ h2 {
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-footer {
-    background-color: #4e7af5;
-    height: 20px;
-    color: white;
-    text-align: center;
-    padding: 1px;
-    margin-top: 10%;
-}
+
 
 @media(max-width: 768px){
     .cards {
@@ -138,9 +109,8 @@ h3{
 
 #sobre{
     margin: auto;
-    min-width: 360px;
-    max-width: 1000px;
-    transition: 0.5s;
+    height: 20%;
+    width: 50%;
 }
 
 
@@ -151,8 +121,6 @@ h3{
     color:black;
     font-size: 20px;
     padding: 50px 40px 40px 40px;
-    height: 170px;
-    width:1200px;
     border-radius: 12px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.425);
     margin: auto;
@@ -168,10 +136,7 @@ h3{
     font-family: roboto;    
 }
 
-#sobre:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
+
 
 .btn-orcamento{
     font-family: roboto, bold;
@@ -208,18 +173,12 @@ h4{
     font-size: 2em;
 }
 
-.slide{
-    width: 25%;
-    height: 100%;
-    position: relative;
-    transition: 2s;
-    margin-block-start:auto ;
-}
 
 .slider{
-    height: 600px;
-    overflow: hidden;
+    margin: 0 auto;
+    height: 1000px;
     width: 100%;
+    overflow: hidden;
 }
 
 .slides{
@@ -234,10 +193,18 @@ h4{
     width: 100vw;
 }
 
+.slide{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    transition: 2s;
+    margin-block-start:auto ;
+}
+
 .slide{    
     position: relative;
     transition: 2s;
-    margin-block-start: auto;
+    
 }
 
 .slide img{    
@@ -253,13 +220,13 @@ h4{
     left: 0;
     width: 100%;
     height: 100%;
-     background-color: rgba(0, 0, 0, 0.5);
-     z-index: 5; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5; 
 }
 
 .manual-navigation{
     position: absolute;
-    width: 1920px;
+    width: 100%;
     margin-top:-50px;
     display: flex;
     justify-content: center;
@@ -303,7 +270,7 @@ h4{
  .navigation_auto{
     position: absolute;
     width: 100%;
-    margin-top: 550px;
+    margin-top: 950px;
     display: flex;
     justify-content: center;
  }
@@ -341,46 +308,33 @@ li > img{
     margin-bottom: -5%;
 }
 
-#contato{
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-}
 
 #contato{
-    font-size: 4em;
-    font-weight: bold;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    width: 500px;
+   display: flex;
     height: 300px;
-    border: 1px solid black;
-    border-radius: 14px;
-    background-image: linear-gradient(to bottom,#4C76EC,#2B4386);
-    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.336);
+    flex-wrap: wrap;
+    gap: 20px;  
+    background-color:#E1ECF7;
+   
 }
+
 
 #contato p{
-    position: relative;
-    color: white;
-    top: 5%;
-    left: 15%;
-    width: 400px;
-}
-
-#contato img{
-    width: 20px;
-    position: relative;
-    top: 20%;
-    left: 9%;
+    display: flex;
+    color: black;
+    padding: 0 3% 0;
+    font-family: "Roboto";
+    font-weight: bold;
+   
+   
 }
 
 #contato a{
-    color: white;
+    color:#4165CA;
+    font-family: "Roboto";
     text-decoration: none;
-    font-size: 2em;
-    padding: 2px;
+    font-size: 18px;
+    
     transition: 0.5s;
 }
 
@@ -392,11 +346,32 @@ li > img{
 #telefone{
     color: #2B4386;
     text-align: center;
-    margin: auto;
+    margin: 10% auto 0;
     font-size: 30px;
     padding: 0;
     font-family: roboto;
+}
+
+.local{
 
 }
-    
-    
+
+footer{
+    background-color: #111F34;
+    height: 150px; 
+    padding: 20px 40px;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: white; 
+    text-align: left;
+}
+
+footer p{
+    font-family: "Roboto";
+    font-size: 14px;
+    color: white; 
+    margin: 4% 0 0 15%;
+    text-align: left;
+
+
+}
