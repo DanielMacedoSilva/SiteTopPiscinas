@@ -5,6 +5,7 @@
 :root{
     --corpadraotxt:#203264;
     --coralttxt:#00A7C7;
+    --cordest:#05F2F2;
 
     --fontealt: "Atkinson Hyperlegible Mono", sans-serif;
     
@@ -22,6 +23,20 @@
 
     #sobre h3{
         padding-left: 20px;
+    }
+    #contato{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+    }
+    .telefone, .email, .local{
+        width: 90%;
+        max-width: none;
+        margin: 15px 0;
+    }
+    .telefone h5, .email h5, .local h5{
+        text-align: center;
     }
 }
 
@@ -72,15 +87,6 @@ section {
     padding: 0 20px;
 }
 
-h2 {
-    margin-top: 2%;
-    margin-left:24%;
-    font-family: roboto;
-    color: #203264;            
-    margin-bottom: 30px;
-    font-size: 2em;
-}
-
 #servicos{
     width:100%;
     max-width: 1850px;
@@ -88,8 +94,19 @@ h2 {
     background-image: url(img/fotos-nossos-servicos.jpg);
     background-position: center center;
     background-size: contain;
+    margin: auto;
    
    
+}
+
+#services{
+    text-align: center;
+    padding: 40px;
+    font-family: "Roboto";
+    color: var(--corpadraotxt);
+    font-size: 2em;
+    text-transform: uppercase;
+    
 }
 
 .cards {
@@ -115,7 +132,8 @@ h2 {
 }
 
 .card h3{
-    color: white;
+    color:var(--cordest);
+    padding: 20px;
 }
 
 .card img {
@@ -161,10 +179,11 @@ h3{
 }
 
 #sobre h2{
-    font-size: 16px;
+    
+    padding-bottom: 35px;
+    font-size: 20px;
     color: var(--coralttxt);
     font-family: var(--fontealt);
-    margin-bottom: 5px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
@@ -252,6 +271,7 @@ h3{
     position: absolute;
     top: 50%;
     left: 50%;
+    font-family: "Roboto";
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
@@ -392,17 +412,11 @@ li > img{
     margin: 3px;
 }
 
-
-#orcamento{
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 15%;
-    margin-bottom: -5%;
-}
-
-
 #contato{
-   display: flex;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10%;
+    display: flex;
     height: 300px;
     flex-wrap: wrap;
     gap: 20px;  
@@ -410,42 +424,67 @@ li > img{
    
 }
 
-
-#contato p{
-    display: flex;
-    color: black;
-    padding: 0 3% 0;
-    font-family: "Roboto";
-    font-weight: bold;
-   
-   
+#contato img{
+    width: 50px;
 }
 
+
 #contato a{
-    color:#4165CA;
+    color:black;
     font-family: "Roboto";
     text-decoration: none;
     font-size: 18px;
-    
     transition: 0.5s;
 }
 
 #contato a:hover{
-    color: black;
+  
     text-decoration: underline;
 }
 
-#telefone{
-    color: #2B4386;
-    text-align: center;
-    margin: 10% auto 0;
-    font-size: 30px;
-    padding: 0;
-    font-family: roboto;
+.telefone, .email, .local{
+    flex:1;
+    max-width: 30%;
+
+}
+
+.telefone{
+    margin: 3% ;
+    font-family: "Roboto";
+    padding: 10px;
+}
+
+.telefone h5{
+    font-family: "Roboto";
+    font-size: 2em;
+}
+
+.telefone p{
+    font-family: "Roboto";
+    padding: 5px;
+}
+
+
+
+.email{
+    margin: 3% ;
+    font-family: "Roboto";
+    padding: 5px;
+}
+
+.email h5{
+    font-family: "Roboto";
+    font-size: 2em;
 }
 
 .local{
+     margin: 3% ;
+    font-family: "Roboto";
+    color: black;
+}
 
+.local h5{
+    font-size: 2em;
 }
 
 footer{
