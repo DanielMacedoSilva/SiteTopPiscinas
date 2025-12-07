@@ -48,6 +48,11 @@
     padding: 0;
 }
 
+body, html{
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 body {
    background-color: #ffff;
@@ -93,7 +98,8 @@ section {
     background-color: black;
     background-image: url(img/fotos-nossos-servicos.jpg);
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: auto;
    
    
@@ -413,11 +419,10 @@ li > img{
 }
 
 #contato{
-    display: flex;
-    justify-content:space-evenly;
+
     margin-top: 10%;
     display: flex;
-    height: 300px;
+    height: auto;
     flex-wrap: wrap;
     gap: 20px;  
     background-color:#E1ECF7;
